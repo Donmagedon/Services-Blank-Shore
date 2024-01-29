@@ -1,12 +1,9 @@
 const express = require("express")
 const app = express()
 const items = require("./routes/items")
-const port = 3330
+const port = 2020
 const test = require("./mongoDB")
-app.use((req,res,next)=>{
 
-  next()
-})
 app.get("/",(req,res)=>{
   res.send("it be working")
   })
