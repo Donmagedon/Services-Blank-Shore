@@ -13,6 +13,6 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/items",items)
-app.listen(port,"0.0.0.0",()=>{
-  console.log("alive")
+app.listen(port,"0.0.0.0",(res,req)=>{
+  res.send("alive")
 })

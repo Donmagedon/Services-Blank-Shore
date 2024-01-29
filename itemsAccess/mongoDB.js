@@ -7,7 +7,6 @@ const itemsModel = mongoose.model("Items",items)
 const fs = require("fs")
 const path = require("path")
 const { MongoDBCollectionNamespace } = require("mongodb")
-require("dotenv").config()
 
 function addToDB(){
   current.forEach(entry => {
