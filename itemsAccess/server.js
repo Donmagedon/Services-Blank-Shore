@@ -6,7 +6,7 @@ const test = require("./mongoDB")
 const dotenv = require("dotenv")
 dotenv.config()
 
-  res.header('Access-Control-Allow-Origin', '');
+
  
 app.get("/",(req,res)=>{
   res.send("it be working")
