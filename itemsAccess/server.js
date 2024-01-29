@@ -8,11 +8,8 @@ app.use((req,res,next)=>{
   next()
 })
 app.get("/",(req,res)=>{
-  
-  req.next()
-})
+  res.send("it be working")
+  })
 
 app.use("/items",items)
-app.listen(port,"0.0.0.0",(res,req)=>{
-  res.send("alive")
-})
+app.listen(port,"0.0.0.0")

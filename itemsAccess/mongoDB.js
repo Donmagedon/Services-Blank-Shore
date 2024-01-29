@@ -29,6 +29,7 @@ async function connectDB(){
 try{
     await mongoose.connect(`mongodb+srv://donmagedon7:${process.env.MONGODB_PASSWORD}@cluster0.lnwbnuf.mongodb.net/?retryWrites=true&w=majority`,{dbName:"EcommerceShop"})
 }catch(error){
+  
     throw new Error(error)
 }}
 
