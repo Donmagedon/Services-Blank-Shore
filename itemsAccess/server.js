@@ -15,6 +15,6 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/items",items)
-app.listen(port,()=>{
+app.listen(port,"0.0.0.0",()=>{
   console.log("alive")
 })

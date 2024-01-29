@@ -16,6 +16,6 @@ app.use(express.json())
 app.use("/api/register",register)
 app.use("/api/login",login)
 app.use("/api/userLoggedIn",tokenAuthenticate)
-app.listen(1313,()=>{
+app.listen(1313,"0.0.0.0",()=>{
     console.log("app listening!")
 })
