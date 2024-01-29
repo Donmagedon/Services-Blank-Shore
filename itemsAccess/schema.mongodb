@@ -1,0 +1,706 @@
+const currentItems = [
+    {
+        
+        name:"sunny Day Jeans",
+        price:22,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_01.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+        
+
+      },   
+       {
+        name:"white soggy jeans",
+        price:24,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_02.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          buttlift:"no"
+        }
+
+      },
+      {
+        name:"fit Jeans",
+        price:18,
+        season_compatibility:["Summer","Spring",],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_03.jpg"),
+        type_details:{
+          fit:"slim",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },      {
+        name:"kinda Chino Jeans",
+        price:30,
+        season_compatibility:["Winter","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_04.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"poliester",
+          buttlift:"no"
+        }
+      }, 
+         {
+        name:"ripped Jeans",
+        price:55,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_05.jpg"),
+        type_details:{
+          fit:"slim",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      }, 
+     {
+        name:"semi Bell pants",
+        price:69,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_06.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+        
+
+      },
+      {
+        name:"short Jeans",
+        price:60,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_07.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"white jeans",
+        price:45,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_08.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"grey normal pants",
+        price:22,
+        season_compatibility:["Winter","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_09.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"Loose Polar Bear Sweater",
+        price:55,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_01.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"heavy"
+        }
+  },
+    {
+        name:"Casual Platinum Sweater",
+        price:30,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        sub_category:["Sweater"],
+        img_path:path.join(__dirname,"/pictures/Sweater_02.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+
+        }
+  },
+    {
+        name:"Elegant Ventilated Sweater",
+        price:33,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_03.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"synthetic",
+          fashion:"elegant",
+          weight:"light"
+
+        }
+  },
+    {
+        name:"Loose Polar Bear Sweater",
+        price:55,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        category:["Clothing"],
+        sub_category:["Sweater"],
+        img_path:path.join(__dirname,"/pictures/Sweater_04.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+        }
+  },
+   {
+        name:"Long Botton Up Sweater",
+        price:60,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_04.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+     {
+        name:"Cropped Comfy Sweater",
+        price:40,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_05.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },   {
+        name:"High Neck Elegant Sweater",
+        price:79,
+        season_compatibility:["Spring","Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_06.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"slim",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  },
+     {
+        name:"Dress Sweater",
+        price:55,
+        season_compatibility:["Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_07.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"tulle",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Grandma's Sweater",
+        price:65,
+        season_compatibility:["Spring","Fall," ,"Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_08.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+
+        }
+  },
+     {
+        name:"Long Sleeve",
+        price:45,
+        season_compatibility:["Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_09.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"Tulle",
+          fashion:"casual",
+          weight:"light"
+
+        },
+        
+     }
+      ,  
+     {
+        name:"Bottoned Up Elegant Sweater",
+        price:75,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_10.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  },
+  
+     {
+        name:"Pink Hoodie",
+        price:35,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_11.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"medium"
+        },
+    
+     },
+     {
+        name:"Loose Rugged Sweater",
+        price:24,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_12.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  
+  }
+  ,
+  
+     {
+        name:"Loose Casual Sweater",
+        price:70,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_13.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"silk",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Light Pink Hoodie",
+        price:15,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_14.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"slim",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Oveized Styled Sweater",
+        price:39,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_15.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Mom's Sweater",
+        price:66,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_16.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"heavy"
+
+        }
+  },
+  
+     {
+        name:"Showbiz Sweater",
+        price:115,
+        season_compatibility:["Fall","Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_17.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  },
+
+  {
+        name:"Fisherman Hat Kindda",
+        price:39,
+        season_compatibility:["Fall","Spring","Summer"],
+        category:["Clothing"],
+        manufacturer:"Pakistan",
+        img_path:path.join(__dirname,"/pictures/Hat_01.jpg"),
+        sub_category:["Hat"],
+         type_details:{
+          family:"fisherman"
+          materials:["cotton","nylon"],
+          waterproof:"yes",
+
+        }
+  },
+   {
+        name:"Vintage Beret",
+        price:48,
+        season_compatibility:["Fall","Spring","Summer"],
+        category:["Clothing"],
+        manufacturer:"Portugal",
+        img_path:path.join(__dirname,"/pictures/Hat_02.jpg"),
+        sub_category:["Hat"],
+         type_details:{
+          family:"beret"
+          materials:["cotton","leather"],
+          waterproof:"no",
+        }
+  }
+   {
+        name:"Jean Cap",
+        price:15,
+        season_compatibility:["Spring","Summer"],
+        category:["Clothing"],
+        manufacturer:"Pakistan",
+        img_path:path.join(__dirname,"/pictures/Hat_03.jpg"),
+        sub_category:["Hat"],
+         type_details:{
+          family:"fisherman"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Bucket Beige",
+        price:30,
+        season_compatibility:["Fall","Spring","Summer"],
+        category:["Clothing"],
+        manufacturer:"Pakistan",
+        img_path:path.join(__dirname,"/pictures/Hat_05.jpg"),
+        sub_category:["Hat"],
+         type_details:{
+          family:"fisherman"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Bennie Showbiz",
+        price:29,
+        season_compatibility:["Fall","Spring","Winter"],
+        category:["Clothing"],
+        manufacturer:"Pakistan",
+        img_path:path.join(__dirname,"/pictures/Hat_06.jpg"),
+        sub_category:["Hat"],
+         type_details:{
+          family:"bennie"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  }
+]
+
+[
+  
+     {
+        name:"Asphalt Shoe",
+        price:50,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_01"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"normal"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+    {
+        name:"Boost Shoe",
+        price:39,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_02"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  }, {
+        name:"Boost Comfy Gray",
+        price:45,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_03"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Casual Whites ",
+        price:50,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_04"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"casual"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"All White NBs",
+        price:79,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_05"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Extra White Vans",
+        price:80,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_06"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Bear Fur Slippers",
+        price:90,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_07),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"casual"
+          materials:["fur"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Fake Leather Shoes",
+        price:70,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_08"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"formal"
+          materials:["synthetic"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Leather High Boots",
+        price:120,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_09"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["leather"],
+          waterproof:"yes",
+
+        }
+  },
+   {
+        name:"Synthetic Boots All Black",
+        price:45,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_10"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"Ah pero tu tienes los: MAQUINA DE GUERRA"
+          materials:["synthetic"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Formal Leather Boots",
+        price:160,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_11"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"formal"
+          materials:["leather"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Synthetic High Boots",
+        price:89,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_12"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"urban"
+          materials:["synthetic"],
+          waterproof:"no",
+
+        }
+  },
+   {
+        name:"Sport Shoes",
+        price:80,
+        season_compatibility:["Fall","Spring","Winter","Summer"],
+        category:["Shoe"],
+        manufacturer:"Colombia",
+        img_path:path.join(__dirname,"/pictures/Shoe_13"),
+        sub_category:["Shoe"],
+         type_details:{
+          type:"sport"
+          materials:["cotton"],
+          waterproof:"no",
+
+        }
+  },
+  
+]
+
+
