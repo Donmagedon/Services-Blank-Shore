@@ -6,11 +6,13 @@ const register = require("./routes/register")
 const login = require("./routes/login")
 const tokenAuthenticate = require("./routes/tokenAuthentication")
 
-app.use(express.json())
 app.use((req,res,next)=>{
+    
     res.header("Access-Control-Allow-Origin","http://localhost:1510")
+    next()    
 })
-
+    
+app.use(express.json())
 app.use("/api/register",register)
 app.use("/api/login",login)
 app.use("/api/userLoggedIn",tokenAuthenticate)
