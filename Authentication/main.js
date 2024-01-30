@@ -23,6 +23,9 @@ app.use(express.json())
 app.use("/api/register",register)
 app.use("/api/login",login)
 app.use("/api/userLoggedIn",tokenAuthenticate)
+app.use("/",(req,res)=>{
+    res.send("received")
+})
 
 const HTTPS_SERVER = https.createServer({
     key:process.env.KEY,
@@ -30,5 +33,5 @@ const HTTPS_SERVER = https.createServer({
 },app)
 
 HTTPS_SERVER.listen(port,(req,res)=>{
-    res.send("alive!")
+    console.log("alive")
 })
