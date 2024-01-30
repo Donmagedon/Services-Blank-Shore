@@ -7,7 +7,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 app.use((req,res,next)=>{
-  res.header("Access-Control-Allow-Origin", "http://34.172.199.162")
+  res.header("Access-Control-Allow-Origin", "http://localhost:1510")
   next()
 }
 )
