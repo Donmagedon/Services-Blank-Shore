@@ -5,6 +5,10 @@ const jwt = require("jsonwebtoken")
 const register = require("./routes/register")
 const login = require("./routes/login")
 const tokenAuthenticate = require("./routes/tokenAuthentication")
+const fs = require("fs")
+const path = require("path")
+const https = require("https")
+const port = 3330
 
 app.use((req,res,next)=>{
     
@@ -19,6 +23,12 @@ app.use(express.json())
 app.use("/api/register",register)
 app.use("/api/login",login)
 app.use("/api/userLoggedIn",tokenAuthenticate)
-app.listen(3330,"0.0.0.0",()=>{
-    console.log("app listening!")
+
+const HTTPS_SERVER = https.createServer({
+    key:process.env.KEY,
+    cert:process.env.CERT,
+},app)
+
+HTTPS_SERVER.listen(port,(req,res)=>{
+    res.send("alive!")
 })
