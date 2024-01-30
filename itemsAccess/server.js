@@ -24,6 +24,6 @@ app.get("/",(req,res)=>{
 
 app.use("/items",items)
 
-app.listen(port,()=>{
-  console.log("removed HTTPS, using hosting now")
+app.listen(port,"0.0.0.0",()=>{
+  console.log("adding right port")
 })

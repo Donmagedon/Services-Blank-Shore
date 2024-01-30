@@ -27,4 +27,6 @@ app.use("/",(req,res)=>{
     res.send("received")
 })
 
-app.listen(port)
+app.listen(port,"0.0.0.0",()=>{
+    console.log("auth is alive!")
+})
