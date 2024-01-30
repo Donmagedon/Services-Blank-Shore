@@ -25,11 +25,11 @@ app.get("/",(req,res)=>{
 app.use("/items",items)
 
 const HTTPS_server = https.createServer({
-  key:fs.readFileSync(path.join(__dirname,"cert","key.pem")),
-  cert:fs.readFileSync(path.join(__dirname,"cert","cert.pem"))
-},
-  app)
+  key:process.env.KEY,
+  cert:process.env.CERT
+},app)
 
   HTTPS_server.listen(2020,()=>{
     console.log("im alive")
   })
+
