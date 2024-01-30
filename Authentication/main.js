@@ -27,11 +27,4 @@ app.use("/",(req,res)=>{
     res.send("received")
 })
 
-const HTTPS_SERVER = https.createServer({
-    key:process.env.KEY,
-    cert:process.env.CERT,
-},app)
-
-HTTPS_SERVER.listen(port,(req,res)=>{
-    console.log("alive")
-})
+app.listen(port)
